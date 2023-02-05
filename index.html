@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virb</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
     <div class="background">
         <div class="mobile-menu-overlay"></div>
-    <header class="header">
-        <nav class="nav-bar">
+          <div class="nav">
+        <nav class="nav-bar container" >
             <h1>Virb</h1>
             <ul class="first">
                 <li><a href="#">Home</a></li>
@@ -27,22 +30,112 @@
                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
         </nav>
-    </header>
+    </div>
     <div class="header-content">
         <h3 class="para1">Create beautiful things </h3>
         <h3 class="para2"> one at a time</h3>
     </div>
-    <main>
-    <section>
-        <div class="main">
-        <div class="service1">
 
+    <div class="container busi">
+    <section id="first">
+        <div class="main-sec">
+        <div class="service service1">
+            <div class="icons">
+            <i class="fa-solid fa-laptop"></i>
+           </div>
+           <div class="content">
+            <h2>Business Strategy</h2>
+            <p>Far far away, behind the word mountains, 
+                far from the countries Vokalia and Consonantia,
+                 there live the blind texts.</p>
+                 <div class="anchor">
+                 <a>Learn</a>
+                 </div>
+           </div>
         </div>
-        
-        
+        <div class="service service2">
+            <div class="icons">
+            <i class="fa-sharp fa-solid fa-money-bill-trend-up"></i>
+           </div>
+           <div class="content">
+            <h2>Business Marketing</h2>
+            <p>Far far away, behind the word mountains, 
+                far from the countries Vokalia and Consonantia,
+                 there live the blind texts.</p>
+                 <div class="anchor">
+                 <a>Learn</a>
+                 </div>
+           </div>
+        </div>
+        <div class="service service3">
+            <div class="icons">
+            <i class="fa-solid fa-wallet"></i>
+           </div>
+           <div class="content">
+            <h2>Business Profit</h2>
+            <p>Far far away, behind the word mountains, 
+                far from the countries Vokalia and Consonantia,
+                 there live the blind texts.</p>
+                 <div class="anchor">
+                 <a>Learn</a>
+                 </div>
+           </div>
+        </div>
     </div>
 </section>
-    </main>
+</div>
+</div>
+</header>
+<div class="container">
+<main id="main">
+    <section class="sec1">
+        <div class="service1">
+         <div class="sr-left">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+         <div class="sr-right">
+
+         </div>
+        </div>
+    </section>
+</main>
 </div>
 </body>
 </html>

@@ -15,24 +15,29 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width:100%;
+    width:100wv;
     height:100vh;
-    margin: 0;
-   
+   position: relative;
 }
 .header{
     width:100%;
     height: auto;
-    padding-top: 3rem;
 }
 .nav-bar{
-    max-width: 1200px;
     display: flex;
     flex-flow: row wrap;
     gap:3rem;
-    margin:.5rem auto .5rem auto;
     
 } 
+.nav{
+    width: 100%;
+    height:auto;
+    padding: 4rem 0 0 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .nav-bar h1{
     font-size: 3rem;
     color:#fff;
@@ -81,12 +86,11 @@ body{
   font-weight: 400;
 }
 .header-content{
-    width:60rem;
+    width:40vw;
     position: absolute;
     top:45%;
     left:50%;
     transform: translate(-50%,-50%);
-    border: 1px solid red;
     text-align: center;
 }
 .header-content .para1{
@@ -102,4 +106,88 @@ body{
     letter-spacing: .1rem;
     padding: .2rem 0 .5rem 0;
     color:#fff;
+}
+#first{
+    margin: 50rem 2rem 2rem 0;
+}
+.main-sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap:2.5rem;
+    /* margin-top: 8rem; */
+    
+}
+.header{
+    margin-bottom: 15rem;
+}
+.service{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#22eaaa;
+}
+.service .icons{
+   flex-basis: 20%;
+   align-self: flex-start;
+   margin: 1.5rem 0 0 1rem;
+}
+.icons .fa-solid{
+    font-size: 5.5rem;
+    color:#000;
+    align-self: center;
+    justify-self: center;
+}
+.service .content{
+    flex-basis: 70%;
+    align-self: flex-start;
+    margin: 1.5rem 0 0 0;
+}
+.content h2{
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    color:#000;
+    font-weight: 300;
+    padding-top: .5rem;
+}
+.content p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color:#000;
+    padding: 1rem 0;
+    line-height: 1.7;
+}
+.content .anchor{
+    margin: 2.5rem 0 2rem 0;
+}
+.content a{
+    font-size: 1.8rem;
+    font-weight: 200;
+    color:#000;
+    padding: .5rem 0;
+}
+#main{
+    margin-top: 10rem;
+}
+.sec1{
+    width:100%;
+    height:auto;
+    margin: 3rem auto;
+}
+.service1{
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.sr-left{
+    flex-basis: 50%;
+    height:auto;
+}
+.sr-right{
+    flex-basis: 45%;
+    height:auto;
+
 }
