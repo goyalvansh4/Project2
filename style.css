@@ -11,7 +11,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .background{
-    background: linear-gradient(rgba(9, 9, 9, 0.877), rgba(0,0,0,0)),url('slider_1.jpg');
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.1) , rgba(0,0,0,0.3) 50%),url('slider_1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -19,6 +19,7 @@ body{
     height:100vh;
    position: relative;
 }
+
 .header{
     width:100%;
     height: auto;
@@ -174,6 +175,7 @@ body{
     width:100%;
     height:auto;
     margin: 3rem auto;
+    text-align: center;
 }
 .service1{
     display: flex;
@@ -182,12 +184,23 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+.nav-bar li .about{
+    color:#414040;
+}
 .sr-left{
     flex-basis: 50%;
     height:auto;
+    display: flex;
+    flex-flow: column wrap;
+    
 }
+
 .sr-right{
-    flex-basis: 45%;
+    flex-basis: 50%;
     height:auto;
 
+}
+.sr-right img{
+    width:33vw;
+    height:auto;
 }
