@@ -86,6 +86,9 @@ body{
   color:#fff;
   font-weight: 400;
 }
+.nav-bar li .about{
+    color:#414040;
+}
 .header-content{
     width:40vw;
     position: absolute;
@@ -108,7 +111,7 @@ body{
     padding: .2rem 0 .5rem 0;
     color:#fff;
 }
-#first{
+#first1{
     margin: 50rem 2rem 2rem 0;
 }
 .main-sec{
@@ -171,36 +174,194 @@ body{
 #main{
     margin-top: 10rem;
 }
-.sec1{
+#second2{
     width:100%;
     height:auto;
-    margin: 3rem auto;
+    margin: 10rem auto;
     text-align: center;
+}
+#second2 h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 2rem auto;
+    text-transform: uppercase;
+    color: #909292;
 }
 .service1{
     display: flex;
     flex-basis: 100%;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
 }
-.nav-bar li .about{
-    color:#414040;
-}
+
 .sr-left{
     flex-basis: 50%;
     height:auto;
-    display: flex;
-    flex-flow: column wrap;
     
 }
+#accordion{
+    margin: 2rem auto;
+}
+#accordion li{
+   list-style-type: none;
+   width:100%;
+   margin-bottom: 1rem;
+   background-color: #fff;
+   padding: 1rem;
+}
+#accordion li label{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: gray;
+}
+#accordion li label span{
+    font-size: 1.8rem;
+    color:gray;
+    font-weight: 300;
+}
+#accordion label + input[type="radio"]{
+     display: none;
+}
+ .sr_content{
+    padding: .1rem 1rem .5rem 1rem;
+    line-height: 2.6rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s;
+    border-bottom: 0.1px solid rgba(213, 213, 213, 0.516);
+}
 
+#accordion label + input[type="radio"]:checked + .sr_content {
+    max-height:400px;
+}
+
+#accordion .sr_content p{
+    font-size: 1.6rem;
+    font-weight: 200;
+    padding: .2rem .7rem;
+    text-align: left;
+}
 .sr-right{
     flex-basis: 50%;
     height:auto;
 
 }
+
 .sr-right img{
     width:33vw;
     height:auto;
+}
+#third3{
+    margin: 5rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap:2rem;
+}
+
+#third3 h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 2rem auto;
+    text-transform: uppercase;
+    color: #909292;
+}
+#third3 .videos {
+    width:75vw;
+    height:95vh;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.718) 50%,rgba(0, 0, 0, 0.718) 50%) ,url('./slider_3.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 3rem;
+    display: grid;
+    place-items: center;
+}
+#third3 a .fa-regular{
+    font-size: 10rem;
+    color:#fff;
+
+}
+#fourth4{
+    text-align: center;
+    margin: 10rem auto;
+}
+#fourth4 h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 2rem auto;
+    text-transform: uppercase;
+    color: #909292;
+}
+.works{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap:2rem;
+    margin-top: 2.5rem;
+}
+.work{
+    margin: 0 .5rem;
+}
+.work img{
+    width:22vw;
+    height:auto;
+}
+.work h3{
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 1.4rem 1.4rem 0 1.4rem;
+    text-align: left;
+    color:gray;
+}
+.work p{
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: .4rem 0 0 1.4rem;
+    text-align: left; 
+    color:gray;
+}
+.work .work_para{
+    font-size: 1.8rem;
+    font-weight: 200;
+    padding: 1.7rem 0 0 1.4rem;
+    text-align: left; 
+    color:#22eaaa;
+}
+.effects:hover{
+    background-color: #22eaaa;
+    cursor: pointer;
+    
+}
+.work:hover > .work_para{
+    color:#fff;
+}
+.work:hover > img ,.effects{
+    transform: scale(1.01);
+    transition: transform .1s;
+     
+}
+#fifth5{
+    margin: 5rem auto;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+#fifth5 h3{
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 3.5rem 0;
+    color:gray;
+}
+.feed{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:3rem;
 }
