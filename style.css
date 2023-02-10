@@ -566,4 +566,17 @@ footer .footer{
     html{
         font-size: 50%;
     }
+    .nav-bar{
+        flex-flow: column wrap;
+        gap:.4rem;
+        
+    } 
+    .main-sec{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .service{
+        flex-flow: column wrap;
+        width:98vw;
+    }
 }
