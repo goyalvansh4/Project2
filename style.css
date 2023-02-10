@@ -561,3 +561,8 @@ footer .footer{
     font-size: 2rem;
     color:#000;
 }
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+}
