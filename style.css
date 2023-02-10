@@ -19,7 +19,10 @@ body{
     height:100vh;
    position: relative;
 }
-
+::selection{
+    background-color: #000;
+    color:#fff;
+}
 .header{
     width:100%;
     height: auto;
@@ -85,6 +88,9 @@ body{
   /* margin: 1rem 0; */
   color:#fff;
   font-weight: 400;
+}
+.nav-bar .second li .fa-brands:hover{
+    color:#22eaaa;
 }
 .nav-bar li .about{
     color:#414040;
@@ -183,7 +189,7 @@ body{
 #second2 h2{
     font-size: 2.5rem;
     font-weight: 400;
-    padding: 2rem auto;
+    padding: 3rem auto;
     text-transform: uppercase;
     color: #909292;
 }
@@ -193,12 +199,13 @@ body{
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .sr-left{
     flex-basis: 50%;
     height:auto;
-    
+    margin-top: 6rem; 
 }
 #accordion{
     margin: 2rem auto;
@@ -250,7 +257,7 @@ body{
 .sr-right{
     flex-basis: 50%;
     height:auto;
-
+    margin-top: 6rem;
 }
 
 .sr-right img{
@@ -307,18 +314,19 @@ body{
     place-items: center;
     gap:2rem;
     margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 .work{
     margin: 0 .5rem;
 }
 .work img{
-    width:22vw;
+    width:25vw;
     height:auto;
 }
 .work h3{
     font-size: 2rem;
     font-weight: 200;
-    padding: 1.4rem 1.4rem 0 1.4rem;
+    padding: .8rem 1.4rem 0 1.4rem;
     text-align: left;
     color:gray;
 }
@@ -336,17 +344,20 @@ body{
     text-align: left; 
     color:#22eaaa;
 }
-.effects:hover{
+.working{
+    margin-top: -5px;
+}
+.work:hover > .working{
     background-color: #22eaaa;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
-.work:hover > .work_para{
+.work:hover > .working > .work_para{
     color:#fff;
+    padding-bottom: .8rem;
 }
-.work:hover > img ,.effects{
-    transform: scale(1.01);
-    transition: transform .1s;
+.work:hover{
+    transform: scale(1.05);
+    transition: transform .7s;
      
 }
 #fifth5{
@@ -364,4 +375,189 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:3rem;
+}
+.person #paragraph{
+    font-size: 2rem;
+    font-weight: 200;
+    padding: .5rem 3rem;
+    line-height: 1.5;
+    text-align: left;
+    color: gray;
+}
+.about_per{
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: flex-start;
+   align-items: center;
+   gap:.7rem;
+   padding-bottom: 1.5rem;
+   margin: 1.5rem 0 1.5rem 1.5rem;
+}
+.person .about_per img{
+    width:4.2vw;
+    height:auto;
+    border-radius: 50%;
+    margin-left: .5rem;
+}
+
+.about_per #para .para_one{
+      font-size: 2.2rem;
+      font-weight: 400;
+      color:#000000a0;
+      padding: .3rem;
+      text-align: left;
+}
+.about_per #para .para_two{
+    font-size: 1.7rem;
+    font-weight: 300;
+    color:#000000a0;
+    padding: .3rem;
+    text-align: left;
+}
+footer{
+    background: #22eaaa;
+    padding: 5rem auto;
+    height:90vh;
+}
+footer .footer{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr 2fr;
+    place-items: center;
+    gap:3rem;
+}
+.footer .foot1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+.foot1 h3{
+      font-size: 2.2rem;
+      font-weight: 300;
+}
+.footer .foot2{
+    padding-top: 10rem;
+    text-align: center;
+}
+.foot2 h3{
+      font-size: 2.2rem;
+      font-weight: 300;
+}
+.footer .foot3{
+    padding-top: 10rem;
+    text-align: center;
+}
+.foot3 h3{
+      font-size: 2.2rem;
+      font-weight: 300;
+}
+.footer .foot4{
+    padding-top: 5rem;
+    text-align: center;
+}
+.foot4 h3{
+      font-size: 2.2rem;
+      font-weight: 300;
+}
+.foot1 p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: .5rem .5rem;
+}
+.foot2 ul{
+    display: flex;
+    flex-flow: column wrap;
+    /* gap:1.5rem; */
+    padding: 1.5rem .5rem;
+}
+.foot2 ul li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #070606c9;
+    padding: 1rem 0;
+}
+.foot2 ul li:first-child{
+    padding-top: 0;
+}
+.foot3 ul{
+    display: flex;
+    flex-flow: column wrap;
+    /* gap:1.5rem; */
+    padding: 1.5rem .5rem;
+}
+.foot3 ul li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #070606c9;
+    padding: 1rem 0;
+}
+.foot3 ul li:first-child{
+    padding-top: 0;
+}
+.foot4 p{
+    font-size: 1.7rem;
+    font-weight: 300;
+    padding: .5rem 1.5rem;
+}
+.foot4 .input{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+}
+.foot4 input[type="email"]{
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 1rem .5rem;
+    background-color: transparent;
+    border:1px solid #0000007d;
+    width:90%;
+    margin: 1.5rem 0;
+    border-radius: .3rem;
+}
+.foot4 .input p{
+    text-transform: uppercase;
+    color:#fff;
+    background-color: #117555;
+    font-size: 1.8rem;
+    font-weight: 500;
+    position: absolute;
+    top:25.5%;
+    left:69.5%;
+    border-radius: .3rem;
+}
+.footer_end{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 1.5rem 0 5rem 0;
+}
+.footer_end .end_content p{
+      font-size: 1.8rem;
+      font-weight: 300;
+      color:rgb(41, 40, 40);
+      padding: 2rem;
+}
+.footer_end .end_content a{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color:rgb(33, 33, 33);
+    padding: 1.5rem;
+}
+.social_links ul{
+    display: flex;
+    flex-flow: row wrap;
+    gap:2rem;
+}
+.social_links ul li{
+      list-style-type: none;
+      
+}
+
+.social_links ul  li a {
+    font-size: 2rem;
+    color:#000;
 }
