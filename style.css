@@ -9,6 +9,7 @@ html{
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 .background{
     background: linear-gradient(to right,rgba(0, 0, 0, 0.1) , rgba(0,0,0,0.3) 50%),url('slider_1.jpg');
