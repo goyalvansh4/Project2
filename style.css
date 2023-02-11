@@ -17,7 +17,8 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     width:100wv;
-    height:100vh;
+    max-width:100%;
+    max-height:100vh;
    position: relative;
 }
 ::selection{
@@ -25,7 +26,7 @@ body{
     color:#fff;
 }
 .header{
-    width:99vw;
+    width:99.9vw;
     height: auto;
 }
 .nav-bar{
@@ -81,7 +82,7 @@ body{
   font-weight: 500;
 }
 .nav-bar ul li:first-child a{
-    color:#22eaaa;
+    color:#03f7aa;
 }
 .nav-bar .second li .fa-brands{
   text-decoration: none;
@@ -182,7 +183,7 @@ body{
     margin-top: 10rem;
 }
 #second2{
-    width:100%;
+    max-width:100%;
     height:auto;
     margin: 10rem auto;
     text-align: center;
@@ -566,17 +567,85 @@ footer .footer{
     html{
         font-size: 50%;
     }
+    .background{
+        max-width: 100vw;
+        max-height: 90vh;
+    }
     .nav-bar{
-        flex-flow: column wrap;
         gap:.4rem;
+        justify-content: space-evenly;
         
     } 
+    .nav-bar li a{
+        
+        color:#373838;
+      }
+    .nav-bar .first{
+        flex-flow: row wrap;
+        flex-basis: 55%;
+        gap:.8rem;
+    }
+    .nav-bar .second{
+        flex-flow: column wrap;
+        flex-basis: 10%;
+        gap:.1rem;
+    }
+    .nav-bar h1{
+        flex-basis: 5%;
+    }
     .main-sec{
         display: flex;
         flex-flow: column wrap;
     }
     .service{
         flex-flow: column wrap;
-        width:98vw;
+        max-width:98vw;
+        margin: 1rem  0 1rem 1.5rem;
+        border-radius: 4px;
+    }
+    .service .icons{
+        flex-basis: 10%;
+        padding-left: .5rem;
+    }
+    .service .content{
+        flex-basis: 50%;
+        padding-left: .5rem;
+    }
+    
+    #third3 .videos{
+        max-width:98%;
+        height:50vh;
+        margin: .5rem;
+    }
+    #main{
+        margin-top: 80rem;
+    }
+    .sr-right #third{
+        display: none;
+    }
+    .sr-right img{
+        width:40vw;
+        height: 40vh ;
+    }
+    .feed{
+        display: grid;
+        grid-template-columns: repeat(3,minmax(110px,1fr));
+        gap:.5rem;
+    }
+    .person #paragraph{
+        word-wrap: break-word;
+    }
+    .person .about_per img{
+        width:7vw;
+    }
+    .foot4 .input p{
+        display: none;
+    }
+    footer{
+        max-width:100vw;
+    }
+    .social_links{
+        margin-top: 3rem;
+        margin-left: 2rem;
     }
 }
